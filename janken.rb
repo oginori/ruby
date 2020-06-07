@@ -31,10 +31,10 @@ class Janken
     puts "相手の手は#{janken[enemy_hand]}です。"
 
     while true
-      if Player() == Enemy()
+      if player_hand == enemy_hand
         puts "あいこ"
         return true
-      elsif player_hand == 0 && enemy_hand == 1) || (player_hand == 1 && enemy_hand == 2) || (player_hand == 2 && enemy_hand == 0)
+      elsif (player_hand == 0 && enemy_hand == 1) || (player_hand == 1 && enemy_hand == 2) || (player_hand == 2 && enemy_hand == 0)
         puts "あなたの勝ちです"
         break
       else
